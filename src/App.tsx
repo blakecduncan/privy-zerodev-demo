@@ -1,11 +1,15 @@
 import React from 'react';
 import { usePrivy, useWallets } from '@privy-io/react-auth';
 import './App.css';
+import { useAccount } from 'wagmi';
 
 function App() {
   const privy = usePrivy();
   const wallets = useWallets();
+  const {address} = useAccount();
   console.log(wallets);
+  console.log(privy.user);
+  console.log('useAccount address', address);
 
   return (
     <div className="App">

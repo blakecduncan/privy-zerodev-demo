@@ -2407,10 +2407,10 @@
     web3-core-helpers "^1.8.0"
     wicg-inert "^3.1.2"
 
-"@privy-io/wagmi-connector@^0.1.5":
-  version "0.1.5"
-  resolved "https://registry.yarnpkg.com/@privy-io/wagmi-connector/-/wagmi-connector-0.1.5.tgz#054edfde4479d8c174750e8a65ee2042160f7c50"
-  integrity sha512-EJ4V6Wk5XmNMSTWaahnU9r481oN5rODMk4/NCCZq2IXWss2EEBI1s71EBnN7cn7U+FAijA2QYeyVGnHUJmJI4A==
+"@privy-io/wagmi-connector@^0.1.6-beta.2":
+  version "0.1.6-beta.2"
+  resolved "https://registry.yarnpkg.com/@privy-io/wagmi-connector/-/wagmi-connector-0.1.6-beta.2.tgz#bb6fd2124a12b0faaf275cfac9b678320ade1209"
+  integrity sha512-eVn8Ypm7IAHFKNvH+y5MKgY393rb0OdqR51GS/1hURLGQsjEBcDTVhznQQHdHysST7Ynrg3jeA3/rySSYlQcLQ==
 
 "@rollup/plugin-babel@^5.2.0":
   version "5.3.1"
