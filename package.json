@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@privy-io/react-auth": "^1.43.3",
-    "@privy-io/wagmi-connector": "^0.1.6-beta.2",
+    "@privy-io/wagmi-connector": "^0.1.6-beta.1",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
@@ -21,11 +21,16 @@
     "wagmi": "^1.4.4",
     "web-vitals": "^2.1.0"
   },
+  "devDependencies": {
+    "relative-deps": "^1.0.7"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prepare": "relative-deps",
+    "prestart": "relative-deps"
   },
   "eslintConfig": {
     "extends": [
@@ -44,5 +49,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "relativeDependencies": {
+    "@privy-io/wagmi-connector": "../wagmi-connector",
+    "@zerodev/wagmi": "../external/zerodev-wagmi"
   }
 }
