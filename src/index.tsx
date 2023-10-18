@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {goerli, mainnet} from '@wagmi/chains';
+import {goerli, polygonMumbai} from '@wagmi/chains';
 import {configureChains} from 'wagmi';
 import {publicProvider} from 'wagmi/providers/public';
 import {PrivyProvider} from '@privy-io/react-auth';
@@ -12,7 +12,7 @@ import reportWebVitals from './reportWebVitals';
 import './index.css';
 import { PRIVY_APP_ID, ZERODEV_PROJECT_IDS } from './constants';
 
-const configureChainsConfig = configureChains([mainnet, goerli], [publicProvider()]);
+const configureChainsConfig = configureChains([goerli, polygonMumbai], [publicProvider()]);
 const zeroDevOptions = {
   projectIds: ZERODEV_PROJECT_IDS,
   projectId: ZERODEV_PROJECT_IDS[0],
@@ -25,7 +25,14 @@ root.render(
   <React.StrictMode>
     <PrivyProvider
       appId={PRIVY_APP_ID}
-      config={{embeddedWallets: {createOnLogin: 'all-users', requireUserPasswordOnCreate: false}}}
+      config={{
+        embeddedWallets: {
+          createOnLogin: 'all-users',
+          requireUserPasswordOnCreate: false
+        },
+        defaultChain: goerli,
+        supportedChains: [goerli, polygonMumbai]
+      }}
     >
       <ZeroDevPrivyWagmiProvider wagmiChainsConfig={configureChainsConfig} options={zeroDevOptions}>
         <App />
