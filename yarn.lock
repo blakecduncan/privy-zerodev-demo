@@ -2420,10 +2420,10 @@
     web3-core-helpers "^1.8.0"
     wicg-inert "^3.1.2"
 
-"@privy-io/wagmi-connector@^0.1.6-beta.1":
-  version "0.1.6-beta.2"
-  resolved "https://registry.yarnpkg.com/@privy-io/wagmi-connector/-/wagmi-connector-0.1.6-beta.2.tgz#bb6fd2124a12b0faaf275cfac9b678320ade1209"
-  integrity sha512-eVn8Ypm7IAHFKNvH+y5MKgY393rb0OdqR51GS/1hURLGQsjEBcDTVhznQQHdHysST7Ynrg3jeA3/rySSYlQcLQ==
+"@privy-io/wagmi-connector@^0.1.6-beta.5":
+  version "0.1.6-beta.5"
+  resolved "https://registry.yarnpkg.com/@privy-io/wagmi-connector/-/wagmi-connector-0.1.6-beta.5.tgz#56db4ebb649a666ac7fdccca4c82d1ec2a34bb97"
+  integrity sha512-B5E7IxmUAjSRM+HuVrzVMhLbpYLGZ0X+aes1kQlLjGNHUplIRU6NIlkuytY8xPIUKmg7aXpcOOWJYfCrt1+U+w==
 
 "@rollup/plugin-babel@^5.2.0":
   version "5.3.1"
@@ -4504,10 +4504,10 @@
   resolved "https://registry.yarnpkg.com/@xtuc/long/-/long-4.2.2.tgz#d291c6a4e97989b5c61d9acf396ae4fe133a718d"
   integrity sha512-NuHqBY1PB/D8xU6s/thBgOAiAP7HOYDQ32+BFZILJ8ivkUkAHQnWfn6WhL79Owj1qmUnoN/YPhktdIoucipkAQ==
 
-"@zerodev/sdk@4.0.29":
-  version "4.0.29"
-  resolved "https://registry.yarnpkg.com/@zerodev/sdk/-/sdk-4.0.29.tgz#2d64b3876d4d651a544000ff1886ba79812f5801"
-  integrity sha512-RZ6J91Dza87xc3/2iF5mlau8/fDZ/wPZ385F0dvB2TmN7PjvOz0+XtePkKnQDpCTJCdoFy0XBh6LGkmlemSNmw==
+"@zerodev/sdk@4.1.4":
+  version "4.1.4"
+  resolved "https://registry.yarnpkg.com/@zerodev/sdk/-/sdk-4.1.4.tgz#903ba59c7ede022dc6b524b0317c68ca4c4b8615"
+  integrity sha512-oUtvGy4x1qbVO88+wWJwYhMc2XH1ah+MH/i0Wx6GX7xjlN+ZXy7QHA3tH9WRrN9ssBcMg2Rj2ACxEpyCQB+c4w==
   dependencies:
     "@alchemy/aa-core" "0.1.0-alpha.23"
     "@alchemy/aa-ethers" "0.1.0-alpha.23"
@@ -4515,26 +4515,26 @@
     merkletreejs "^0.3.10"
     viem "^1.5.3"
 
-"@zerodev/wagmi@^4.1.18":
-  version "4.1.18"
-  resolved "https://registry.yarnpkg.com/@zerodev/wagmi/-/wagmi-4.1.18.tgz#d431933f477015c16de4977c9a18426b6ac7afbd"
-  integrity sha512-OVlhMu9PPIKWYLYjoDt/fc1w3JyEX1Fb2zBfqMr0OuJcG0Wtr1M/OZhK+veF6P8ZdkpwEpgJ5Pp2r7t0CL/qxA==
+"@zerodev/wagmi@^4.2.2":
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/@zerodev/wagmi/-/wagmi-4.2.2.tgz#3226bdb62acc8c7d060ea626d92574892f6fa232"
+  integrity sha512-2NudwAe8qNpDbbp1eIXHypQXtCPFBmCvSUbwLKjauvtuNpgX4lMvajBOmUzdb40Qp2bh7+3kukOQXNtdKblhHQ==
   dependencies:
-    "@zerodev/sdk" "4.0.29"
-    "@zerodev/web3auth" "4.1.15"
+    "@zerodev/sdk" "4.1.4"
+    "@zerodev/web3auth" "4.2.3"
     ethers "5.7.2"
 
-"@zerodev/web3auth@4.1.15":
-  version "4.1.15"
-  resolved "https://registry.yarnpkg.com/@zerodev/web3auth/-/web3auth-4.1.15.tgz#d2c6bdc62a65d0190dd63272ed17952ae33a6824"
-  integrity sha512-Z3I4SqT0HU8/jHkCNlz3sYT0YfYNiRNYhp7C+IMYLKEODNslZt3+IQGBecJg6pyXu/s5eA1rU6h/AHYrK47/iQ==
+"@zerodev/web3auth@4.2.3":
+  version "4.2.3"
+  resolved "https://registry.yarnpkg.com/@zerodev/web3auth/-/web3auth-4.2.3.tgz#88f489859892cab1b1e7d88a9c5acaa0ae4b3ce2"
+  integrity sha512-Tb0nuxRB93JmqxyqKQpWfk+w7ryFc8wRCpg9+bttZKoFiMFGDvVh8LE/N/5OrBP004l/RHFpTiHj3RASeFdtxw==
   dependencies:
     "@web3auth/base" "7.0.1"
     "@web3auth/ethereum-provider" "7.0.2"
     "@web3auth/modal" "7.0.3"
     "@web3auth/no-modal" "7.0.1"
     "@web3auth/openlogin-adapter" "7.0.1"
-    "@zerodev/sdk" "4.0.29"
+    "@zerodev/sdk" "4.1.4"
 
 JSONStream@^1.3.5:
   version "1.3.5"

@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@privy-io/react-auth": "^1.43.3",
-    "@privy-io/wagmi-connector": "^0.1.6-beta.1",
+    "@privy-io/wagmi-connector": "^0.1.6-beta.5",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
@@ -13,7 +13,7 @@
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "@wagmi/chains": "^1.8.0",
-    "@zerodev/wagmi": "^4.1.18",
+    "@zerodev/wagmi": "^4.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",

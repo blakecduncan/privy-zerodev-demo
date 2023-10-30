@@ -6,10 +6,10 @@ import { useAccount } from 'wagmi';
 function App() {
   const privy = usePrivy();
   const wallets = useWallets();
-  const {address} = useAccount();
+  const {address, isConnected} = useAccount();
   console.log(wallets);
   console.log(privy.user);
-  console.log('useAccount address', address);
+  console.log('useAccount ', { address, isConnected });
 
   return (
     <div className="App">
