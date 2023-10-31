@@ -1,23 +1,27 @@
 import React from 'react';
-import { usePrivy, useWallets } from '@privy-io/react-auth';
+import Home from './pages/Home'
+import Login from './pages/Login';
+
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 import './App.css';
-import { useAccount } from 'wagmi';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Home />,
+  },
+  {
+    path: '/login',
+    element: <Login />,
+  },
+]);
 
 function App() {
-  const privy = usePrivy();
-  const wallets = useWallets();
-  const {address, isConnected} = useAccount();
-  console.log(wallets);
-  console.log(privy.user);
-  console.log('useAccount ', { address, isConnected });
-
   return (
-    <div className="App">
-        Authenticated: {privy.authenticated.toString()}
-        <br />
-        {privy.authenticated && <button onClick={() => privy.logout()}>logout</button>}
-        {!privy.authenticated && <button onClick={() => privy.login()}>login</button>}
-    </div>
+    <RouterProvider router={router} />
   );
 }
 
