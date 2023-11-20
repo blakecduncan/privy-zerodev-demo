@@ -13,8 +13,7 @@
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "@wagmi/chains": "^1.8.0",
-    "@zerodev/privy": "^1.1.2",
-    "@zerodev/wagmi": "^4.2.2",
+    "@zerodev/privy": "^1.2.2",
     "react": "^18.2.0",
     "react-app-rewired": "^2.2.1",
     "react-dom": "^18.2.0",
@@ -64,8 +63,5 @@
       "last 1 safari version"
     ]
   },
-  "relativeDependencies": {
-    "@privy-io/wagmi-connector": "../wagmi-connector",
-    "@zerodev/wagmi": "../external/zerodev-wagmi"
-  }
+  "relativeDependencies": {}
 }

@@ -14,7 +14,6 @@ function App() {
     wallets.find((wallet) => wallet.walletClientType === "privy") || wallets[0];
 
   useEffect(() => {
-    debugger;
     if (ready && !authenticated) {
       navigate("/login");
     }
