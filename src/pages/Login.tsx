@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
-import { usePrivy } from "@privy-io/react-auth";
+import { usePrivySmartAccount } from "@zerodev/privy";
 import { useNavigate } from 'react-router-dom';
 
 function Login() {
-  const { ready, authenticated, login, logout } = usePrivy();
+  const { ready, authenticated, login, logout } = usePrivySmartAccount();
   const navigate = useNavigate()
 
   useEffect(() => {
@@ -13,7 +13,7 @@ function Login() {
   }, [ready, authenticated, navigate]);
 
   return (
-    <div className="login">
+    <div className="App">
       <div>
         Authenticated: {authenticated.toString()}
         <br />
