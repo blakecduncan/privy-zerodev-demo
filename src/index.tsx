@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {goerli, polygonMumbai} from '@wagmi/chains';
+import {polygonMumbai} from '@wagmi/chains';
 import {PrivyProvider} from '@privy-io/react-auth';
 import { ZeroDevProvider } from '@zerodev/privy';
 
@@ -17,16 +17,18 @@ root.render(
   <React.StrictMode>
     <ZeroDevProvider
       projectId={ZERODEV_PROJECT_IDS[0]}
+      gasToken='USDC'
     >
       <PrivyProvider
         appId={PRIVY_APP_ID}
         config={{
           embeddedWallets: {
-            createOnLogin: 'all-users',
-            requireUserPasswordOnCreate: false
+            createOnLogin: 'users-without-wallets',
+            noPromptOnSignature: true
           },
-          defaultChain: goerli,
-          supportedChains: [goerli, polygonMumbai]
+          defaultChain: polygonMumbai,
+          supportedChains: [polygonMumbai],
+          loginMethods: ['email'],
         }}
       >
         <App />
